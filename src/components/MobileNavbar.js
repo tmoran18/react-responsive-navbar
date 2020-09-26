@@ -3,7 +3,7 @@ import "../styles.css";
 
 const MobileNavbar = () => {
   return (
-    <div className="mobileNav_container">
+    <nav className="mobileNav_container">
       <img src="./logo.svg" width="50" alt="logo" />
       <img
         className="menu_icon"
@@ -18,7 +18,7 @@ const MobileNavbar = () => {
           <li>Services</li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

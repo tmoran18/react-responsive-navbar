@@ -1,8 +1,12 @@
 {
   "name": "react-responsive-navbar",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "A simple responsive Navbar built with React using Hooks",
+  "keywords": [
+    "hooks",
+    "react",
+    "navbar"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.13.1",
