@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import "../styles.css";
 
 const MobileNavbar = () => {
-  const [mobileNavIsOpen, setMobileNavisOpen] = useState("false");
+  const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
 
   // Toggle the Mobile Nav open / close
   const handleMobileNavClick = () => {
-    mobileNavIsOpen ? setMobileNavisOpen(false) : setMobileNavisOpen(true);
+    mobileNavIsOpen ? setMobileNavIsOpen(false) : setMobileNavIsOpen(true);
   };
+
+  window.addEventListener("resize", () => {
+    window.innerWidth > 600 && setMobileNavIsOpen(false);
+  });
 
   return (
     <nav className="mobileNav_container">
